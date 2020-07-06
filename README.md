@@ -24,7 +24,7 @@ Ready to run the experiments (Python 3):
 python3 Run.py
 ```
 
-## Running experiments
+## Experiments
 To run the experiments, we only need to create a `NormativeApproachDiscrimination` object by passing the csv and the datase config file (see below) as parameters.
 ```python
 na = daddna.NormativeApproachDiscrimination('DatasetsClean/adult_quantile/adult_quantile.csv', 
