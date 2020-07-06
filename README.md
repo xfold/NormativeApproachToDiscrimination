@@ -1,4 +1,4 @@
-# A Normative approach to Attest Digital Discrimination
+# A Normative Approach to Attest Digital Discrimination
 This repository contains the source code of the original paper ['A Normative approach to Attest Digital Discrimination']() accepted in AI4EQ Workshop of ECAI 2020, and is part of the project [Discovering and Attesting Digital Discrimination (DADD)](http://dadd-project.org/). 
 
 Abstract.
