@@ -16,7 +16,7 @@ First, download or clone the repository. The repository contains the next folder
 
 Once we have downloaded the repository we need to install all dependencies and libraries:
 ```python
-pip3 install requirements.txt
+pip3 install -r requirements.txt
 ```
 
 Ready to run the experiments (Python 3):
