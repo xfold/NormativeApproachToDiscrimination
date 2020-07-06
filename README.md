@@ -15,22 +15,24 @@ First, download or clone the repository. The repository contains the next folder
 * requirements.txt: Requirements file
 
 Once we have downloaded the repository we need to install all dependencies and libraries:
->`pip install requirements.txt`
+```python
+pip install requirements.txt
+```
 
 Ready to run the experiments (Python 3):
->`python3 Run.py` 
+```python
+python3 Run.py
+```
 
 ## Running experiments
 To run the experiments, we only need to create a `NormativeApproachDiscrimination` object by passing the csv and the datase config file (see below) as parameters.
-
->`na = daddna.NormativeApproachDiscrimination('DatasetsClean/adult_quantile/adult_quantile.csv', 
+```python
+na = daddna.NormativeApproachDiscrimination('DatasetsClean/adult_quantile/adult_quantile.csv', 
                                              'DatasetsClean/adult_quantile/config_adult_quantile.py', 
-                                             verbose= False)`
-                                             
->`violations = na.Run()`
-
->`pprint.pprint(violations)`
-
+                                             verbose= False)
+violations = na.Run()
+pprint.pprint(violations)
+```
 
 Note that all values in the csv `'DatasetsClean/adult_quantile/adult_quantile.csv'` will be considered discrete values, so the dataset should be discretised beforehand (we used quantile discretizations in our experiments). Also, a configuration file that defines the input, output, protected variables and exceptions is needed to run the analysis `'DatasetsClean/adult_quantile/config_adult_quantile.py'`. After calling `Run()`, the system will identify all violatoins of the norms as defined in the configuration file.
 
