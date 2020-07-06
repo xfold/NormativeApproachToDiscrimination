@@ -60,7 +60,7 @@ In the case of indirect discrimination violations (`Vd`), `P` corresponds to the
 
 
 ## Contact
-You can find us on our website on [Discovering and Attesting Digital Discrimination](http://dadd-project.org/), take a look at our [Language Bias Visualiser](https://xfold.github.io/WE-GenderBiasVisualisationWeb/)!
+You can find us on our website on [Discovering and Attesting Digital Discrimination](http://dadd-project.org/). Also, take a look at our [Language Bias Visualiser](https://xfold.github.io/WE-GenderBiasVisualisationWeb/)!
 
 Created by [@xfold](https://github.com/xfold).
 
