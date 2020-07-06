@@ -33,10 +33,30 @@ na = daddna.NormativeApproachDiscrimination('DatasetsClean/adult_quantile/adult_
 violations = na.Run()
 pprint.pprint(violations)
 ```
+Note that all values in the csv `'DatasetsClean/adult_quantile/adult_quantile.csv'` will be considered discrete values, so the dataset should be discretised beforehand (we used quantile discretizations in our experiments). Also, a configuration file that defines the input, output, protected variables and exceptions is needed to run the analysis `'DatasetsClean/adult_quantile/config_adult_quantile.py'`. After calling `Run()`, the system will identify all violatoins of the norms as defined in the configuration file. Explanations on how to create a configuration file for a dataset can be found in `config_template.py` file.
 
-Note that all values in the csv `'DatasetsClean/adult_quantile/adult_quantile.csv'` will be considered discrete values, so the dataset should be discretised beforehand (we used quantile discretizations in our experiments). Also, a configuration file that defines the input, output, protected variables and exceptions is needed to run the analysis `'DatasetsClean/adult_quantile/config_adult_quantile.py'`. After calling `Run()`, the system will identify all violatoins of the norms as defined in the configuration file.
-
-Explanations on how to create a configuration file for a dataset can be found in `config_template.py` file.
+Running the above code returns a long list of violations in a json format, including:
+```python
+{'Vd': [{'O': 'class',
+         'Ov': "b' >50K'",
+         'P': 'sex',
+         'Pv': ("b' Male'", "b' Female'"),
+         'chi2': {'chi2': 1517.813409134445,
+                  'degrees_freedom': 1,
+                  'pvalue': 0.0},
+          ...,
+          ...]
+          ,
+ 'Ve': ['relationship',
+        'sex',
+        'marital-status',
+        'native-country',
+        'race',
+        'age'],
+ 'Vi': []}
+```
+Where `Vd` corresponds to indirect discrimination violations, `Ve` to explicit direct discrimination violations, and `Vi` to implicit direct discrimination violations. The results presented in direct discrimination cases `Ve` and `Vi` are self-explanatory, as they indicate the columns that caused direct discrimination violations either directly or by acting like proxies of protected variables, respectively.
+In the case of indirect discrimination violations (`Vd`), `P` corresponds to the protected column, `Pv` the protected values from `P` that when compared raised the case of disparate impact with respect output value `Ov` from output column `O`. In the example below, the results show us that there is a case of disparate impact between 'Male' and 'Female' with respect of the output value of earning '>50k'. 
 
 
 ## Contact
