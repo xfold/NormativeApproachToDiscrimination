@@ -24,4 +24,5 @@ print('''
 The dataset was collected from https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data) and discretised using quantile discretisation.
 ''')
 na = NormativeApproachDiscrimination('DatasetsClean/german_credit_quantile/german_credit_quantile.csv', 'DatasetsClean/german_credit_quantile/config_german_credit_quantile.py', verbose= False)
-
+violations = na.Run()
+pprint.pprint(violations)
