@@ -8,7 +8,7 @@ This repository contains the source code of the original paper ['A Normative app
 
 
 ## Setup
-First, download or clone the repository. The repository contains the next folders:
+First, download or clone the repository. The repository contains the next files and folders:
 * DatasetsClean/: Contains the two datasets used in the paper already discretised (using quantile discretization). Each dataset contains its own configuration file in which protected, input and output columns are specified.
 * config_template.py: A configuration template for new datasets
 * NormativeApproach.py: The normative approach library
@@ -64,5 +64,5 @@ In the case of indirect discrimination violations (`Vd`), `P` corresponds to the
 ## Contact
 You can find us on our website on [Discovering and Attesting Digital Discrimination](http://dadd-project.org/). Also, take a look at our [Language Bias Visualiser](https://xfold.github.io/WE-GenderBiasVisualisationWeb/)!
 
-Created by [@xfold](https://github.com/xfold).
+<i>Created by [@xfold](https://github.com/xfold).</i>
 
