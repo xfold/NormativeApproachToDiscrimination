@@ -1,9 +1,18 @@
 ## Overview
-This repository contains the source code of the original paper ['A Normative approach to Attest Digital Discrimination']() accepted in AI4EQ Workshop of ECAI 2020, and is part of the project [Discovering and Attesting Digital Discrimination (DADD)](http://dadd-project.org/). 
+This repository contains the source code of the original paper ['A Normative approach to Attest Digital Discrimination'](https://arxiv.org/pdf/2007.07092.pdf) accepted in AI4EQ Workshop of ECAI 2020, and is part of the project [Discovering and Attesting Digital Discrimination (DADD)](http://dadd-project.org/). 
 
 <i>Digital discrimination</i> is a form of discrimination whereby users are automatically treated unfairly, unethically or just differently based on their personal data by a machine learning (ML) system. Examples of digital discrimination include low-income neighborhood’s targeted with high-interest loans or low credit scores, and women being undervalued by 21% in online marketing. Recently, different techniques and tools have been proposed to detect biases that may lead to digital discrimination. These tools often require technical expertise to be executed and for their results to be interpreted. To allow non-technical users to benefit from ML, simpler notions and concepts to represent and reason about digital discrimination are needed. In this paper, we use norms as an abstraction to represent different situations that may lead to digital discrimination. In particular, we formalise non-discrimination norms in the context of ML systems and propose an algorithm to check whether ML systems violate these norms.
 
-
+```
+@misc{criado2020normative,
+    title={A Normative approach to Attest Digital Discrimination},
+    author={Natalia Criado and Xavier Ferrer and Jose M. Such},
+    year={2020},
+    eprint={2007.07092},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI}
+}
+```
 
 
 
@@ -59,7 +68,6 @@ Running the above code returns a long list of violations in a json format, inclu
 ```
 Where `Vd` corresponds to indirect discrimination violations, `Ve` to explicit direct discrimination violations, and `Vi` to implicit direct discrimination violations. The results presented in direct discrimination cases `Ve` and `Vi` are self-explanatory, as they indicate the columns that caused direct discrimination violations either directly or by acting like proxies of protected variables, respectively.
 In the case of indirect discrimination violations (`Vd`), `P` corresponds to the protected column, `Pv` the protected values from `P` that when compared raised the case of disparate impact with respect output value `Ov` from output column `O`. In the example below, the results show us that there is a case of disparate impact between 'Male' and 'Female' with respect of the output value of earning '>50k'. 
-
 
 ## Contact
 You can find us on our website on [Discovering and Attesting Digital Discrimination](http://dadd-project.org/). Also, take a look at our [Language Bias Visualiser](https://xfold.github.io/WE-GenderBiasVisualisationWeb/)!
