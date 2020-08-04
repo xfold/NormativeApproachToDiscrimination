@@ -70,7 +70,7 @@ Where `Vd` corresponds to indirect discrimination violations, `Ve` to explicit d
 In the case of indirect discrimination violations (`Vd`), `P` corresponds to the protected column, `Pv` the protected values from `P` that when compared raised the case of disparate impact with respect output value `Ov` from output column `O`. In the example below, the results show us that there is a case of disparate impact between 'Male' and 'Female' with respect of the output value of earning '>50k'. 
 
 ## Contact
-You can find us on our website on [Discovering and Attesting Digital Discrimination](http://dadd-project.org/). Also, take a look at our [Language Bias Visualiser](https://xfold.github.io/WE-GenderBiasVisualisationWeb/)!
+You can find us on our website on [Discovering and Attesting Digital Discrimination](http://dadd-project.org/). Also, take a look at our [Language Bias Visualiser](https://xfold.github.io/WE-GenderBiasVisualisationWeb/)! <i>[@xfold](https://github.com/xfold).</i>
 
-<i>Created by [@xfold](https://github.com/xfold).</i>
+
 
