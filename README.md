@@ -4,9 +4,10 @@ This repository contains the source code of the original paper ['A Normative app
 <i>Digital discrimination</i> is a form of discrimination whereby users are automatically treated unfairly, unethically or just differently based on their personal data by a machine learning (ML) system. Examples of digital discrimination include low-income neighborhood’s targeted with high-interest loans or low credit scores, and women being undervalued by 21% in online marketing. Recently, different techniques and tools have been proposed to detect biases that may lead to digital discrimination. These tools often require technical expertise to be executed and for their results to be interpreted. To allow non-technical users to benefit from ML, simpler notions and concepts to represent and reason about digital discrimination are needed. In this paper, we use norms as an abstraction to represent different situations that may lead to digital discrimination. In particular, we formalise non-discrimination norms in the context of ML systems and propose an algorithm to check whether ML systems violate these norms.
 
 ```
-@misc{criado2020normative,
+@inproceedings{criado2020normative,
     title={A Normative approach to Attest Digital Discrimination},
     author={Natalia Criado and Xavier Ferrer and Jose M. Such},
+    booktitle={Advancing Towards the SDGS Artificial Intelligence for a Fair, Just and Equitable World Workshop of the 24th European Conference on Artificial Intelligence (ECAI 2020) (forthcoming)},
     year={2020},
     eprint={2007.07092},
     archivePrefix={arXiv},
