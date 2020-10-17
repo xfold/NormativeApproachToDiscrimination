@@ -45,7 +45,7 @@ na = daddna.NormativeApproachDiscrimination('DatasetsClean/adult_quantile/adult_
 violations = na.Run()
 pprint.pprint(violations)
 ```
-Note that all values in the csv `'DatasetsClean/adult_quantile/adult_quantile.csv'` will be considered discrete values, so the dataset should be discretised beforehand (we used quantile discretizations in our experiments). Also, a configuration file that defines the input, output, protected variables and exceptions is needed to run the analysis `'DatasetsClean/adult_quantile/config_adult_quantile.py'`. After calling `Run()`, the system will identify all violatoins of the norms as defined in the configuration file. Explanations on how to create a configuration file for a dataset can be found in `config_template.py` file.
+Note that all values in the csv `'DatasetsClean/adult_quantile/adult_quantile.csv'` will be considered discrete values, so the dataset should be discretised beforehand (we used quantile discretizations in our experiments). Also, a configuration file that defines the input, output, protected variables and exceptions is needed to run the analysis `'DatasetsClean/adult_quantile/config_adult_quantile.py'`. After calling `Run()`, the system will identify all violations of the norms as defined in the configuration file. Explanations on how to create a configuration file for a dataset can be found in `config_template.py` file.
 
 Running the above code returns a long list of violations in a json format, including:
 ```python
