@@ -1,17 +1,18 @@
 ## Overview
-This repository contains the source code of the original paper ['A Normative approach to Attest Digital Discrimination'](https://arxiv.org/pdf/2007.07092.pdf) accepted at AI4EQ Workshop of ECAI 2020, and part of the project [Discovering and Attesting Digital Discrimination (DADD)](http://dadd-project.org/). 
+This repository contains the source code of the original paper ['Attesting Digital Discrimination Using Norms'](https://kclpure.kcl.ac.uk/portal/files/149254447/IJIMAI_copy_for_pure_2_.pdf) accepted at IJIMAI and at the AI4EQ Workshop of ECAI 2020, and part of the project [Discovering and Attesting Digital Discrimination (DADD)](https://dadd-project.github.io/). 
 
 <i>Digital discrimination</i> is a form of discrimination whereby users are automatically treated unfairly, unethically or just differently based on their personal data by a machine learning (ML) system. Examples of digital discrimination include low-income neighborhood’s targeted with high-interest loans or low credit scores, and women being undervalued by 21% in online marketing. Recently, different techniques and tools have been proposed to detect biases that may lead to digital discrimination. These tools often require technical expertise to be executed and for their results to be interpreted. To allow non-technical users to benefit from ML, simpler notions and concepts to represent and reason about digital discrimination are needed. In this paper, we use norms as an abstraction to represent different situations that may lead to digital discrimination. In particular, we formalise non-discrimination norms in the context of ML systems and propose an algorithm to check whether ML systems violate these norms.
 
+To cite this work, please use:
 ```
-@inproceedings{criado2020normative,
-    title={A Normative approach to Attest Digital Discrimination},
-    author={Natalia Criado and Xavier Ferrer and Jose M. Such},
-    booktitle={Advancing Towards the SDGS Artificial Intelligence for a Fair, Just and Equitable World Workshop of the 24th European Conference on Artificial Intelligence (ECAI 2020) (forthcoming)},
-    year={2020},
-    eprint={2007.07092},
-    archivePrefix={arXiv},
-    primaryClass={cs.AI}
+@article{pacheco2021attesting,
+  title={Attesting Digital Discrimination Using Norms},
+  author={Pacheco, Natalia Criado and Aran, Xavier Ferrer and Such, Jose},
+  journal={International Journal of Interactive Multimedia and Artificial Intelligence},
+  volume={6},
+  number={5},
+  pages={16--23},
+  year={2021}
 }
 ```
 
